@@ -1,0 +1,107 @@
+/* Updated CSS for Login and Signup Form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://t4.ftcdn.net/jpg/04/80/12/93/360_F_480129384_xkBXyTdVt1R5F7KBwTD2kDURi7hV97Ad.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    background-color: transparent; /* Fully transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Adjust the width as needed */
+    border: 2px solid #ffd54f; /* Darker yellow outline */
+    text-align: center;
+}
+
+h2 {
+    color: #fff; /* White color */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ensure labels and inputs are in a column */
+    align-items: center; /* Align items to the center */
+}
+
+.container .first {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* White text color for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffd54f; /* Thin darker yellow border */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background for inputs */
+    color: #000; /* Black text color for inputs */
+    width: 80%; /* Reduce the width of input fields */
+    margin-left: 10px; /* Add some left margin for alignment */
+    margin-top: 10px; /* Add some top margin to increase space between label and input */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #666; /* Dark grey placeholder text color */
+}
+
+.submit-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Aligns the button to the center */
+}
+
+input[type="submit"] {
+    background-color: #ffd54f; /* Darker yellow background for button */
+    color: #000000; /* Black text color for button */
+    font-weight: bold; /* Bold text */
+    padding: 12px 22px;
+    border: 1px solid #a88207; /* Matching darker yellow border */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffc003; /* Slightly darker yellow for button on hover */
+}
+
+/* Styles for Signup Button */
+.signup-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffd54f;
+    color: #0e0e0e;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold; /* Bold text */
+    font-size: 18px;
+
+
+}
+
+.signup-btn:hover {
+    background-color: #ffc003;
+}

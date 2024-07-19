@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://t4.ftcdn.net/jpg/04/80/12/93/360_F_480129384_xkBXyTdVt1R5F7KBwTD2kDURi7hV97Ad.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.crud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    width: 100%;
+    position: relative;
+    margin-right: 20px; /* Move header slightly to the right */
+}
+
+.crud-header h2 {
+    color: #ffd54f;
+    margin: 0;
+    margin-left: 50px; /* Move header slightly to the right */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 240px; /* Adjust this value to move it left or right */
+}
+
+.search-input {
+    padding: 8px; /* Reduce padding */
+    border: 2px solid #ffca28; /* Darker yellow border */
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color: #fff8e1; /* Light yellow background */
+    font-size: 14px; /* Reduce font size */
+    color: #000; /* Text color */
+    flex: 1;
+}
+
+.search-input::placeholder {
+    color: #000; /* Placeholder text color */
+}
+
+.btn {
+    background-color: #ffd54f;
+    color: #000000;
+    font-weight: bold;
+    padding: 8px 15px; /* Reduce padding */
+    border: 1px solid #ffd54f;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    margin-left: 8px; /* Reduce margin */
+}
+
+.btn:hover {
+    background-color: #ffca28;
+}
+
+.btn.btn-primary {
+    background-color: #ffca28;
+    color: #090909; /* Text color */
+    padding: 8px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline for links */
+    position: absolute;
+    top: 20px; /* Adjust the top distance */
+    right: 20px; /* Adjust the right distance */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    border: 5px solid #7c620d;
+    font-size: 16px; /* Reduce font size */
+}
+
+.btn.btn-primary:hover {
+    background-color: #e0dd2a; /* Darker shade for hover */
+    cursor: pointer;
+}
+
+.crud-heading {
+    text-align: center;
+    color: #ffca28; /* Yellow color */
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    font-size: 24px; /* Reduce font size */
+}
+
+table {
+    width: 80%; /* Reduce width */
+    border-collapse: collapse;
+    background-color: #fbf6e6;
+    margin-top: 80px; /* Increase margin to move the table further down */
+}
+
+table, th, td {
+    border: 2px solid #000;
+}
+
+th, td {
+    padding: 10px; /* Reduce padding */
+    text-align: left;
+    font-size: 14px; /* Reduce font size */
+}
+
+.btn-edit,
+.btn-delete,
+.btn.btn-search,
+.btn.btn-back {
+    background-color: #ffca28; /* Matching color for buttons */
+    color: #090909; /* Text color */
+    font-weight: bold;
+    padding: 8px 15px; /* Matching padding */
+    border: 1px solid #7c620d; /* Matching border */
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Matching font size */
+    margin: 0 4px; /* Optional margin for spacing */
+}
+
+.btn-edit:hover,
+.btn-delete:hover,
+.btn.btn-search:hover,
+.btn.btn-back:hover {
+    background-color: #e0dd2a; /* Darker shade for hover */
+}
+
+.btn-edit {
+    background-color: #ffca28; /* Matching color */
+    border: 1px solid #7c620d; /* Matching border */
+}
+
+.btn-delete {
+    background-color: #ffca28; /* Matching color */
+    border: 1px solid #7c620d; /* Matching border */
+}
+
+.btn.btn-search {
+    background-color: #ffca28; /* Matching color */
+    border: 1px solid #7c620d; /* Matching border */
+}
+
+.btn.btn-back {
+    background-color: #ffca28; /* Matching color */
+    border: 1px solid #7c620d; /* Matching border */
+}

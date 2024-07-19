@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url('https://t4.ftcdn.net/jpg/04/80/12/93/360_F_480129384_xkBXyTdVt1R5F7KBwTD2kDURi7hV97Ad.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation bar styling */
+header {
+    background-color: #ffd54f; /* Yellow background */
+    padding: 20px 0; /* Padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center align */
+    padding: 0 20px; /* Add padding */
+}
+
+header h1 {
+    color: #000; /* Black text color */
+    margin: 0;
+    font-size: 35px; /* Font size */
+    cursor: pointer; /* Add cursor pointer */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+header h1:hover {
+    color: #333; /* Change color on hover */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjusted margin for spacing */
+    font-size: 18px; /* Adjusted font size */
+}
+
+header nav ul li:first-child {
+    margin-left: 20px; /* Margin added to the first child to align more left */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000; /* Black text color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #333; /* Darker color on hover */
+}
+
+/* Main form styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 100px; /* Adjust for fixed header */
+    width: 100%;
+}
+
+form {
+    background-color: transparent; /* Fully transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 600px; /* Adjust the width as needed */
+    border: 2px solid #fff176; /* Lighter yellow outline */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Adjust the width as needed */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* White text color for labels */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff176; /* Thin lighter yellow border */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background for inputs */
+    color: #000; /* Black text color for inputs */
+}
+
+input[type="text"]::placeholder,
+input[type="date"]::placeholder,
+input[type="password"]::placeholder {
+    color: #666; /* Dark grey placeholder text color */
+}
+
+.submit-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the left */
+}
+
+input[type="submit"] {
+    background-color: #fff176; /* Lighter yellow background for button */
+    color: #000000; /* Black text color for button */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px;
+    border: 1px solid #fff176; /* Matching lighter yellow border */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffee58; /* Slightly darker yellow for button on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffd54f; /* Yellow background */
+    padding: 20px 0; /* Padding */
+    text-align: center;
+    width: 100%;
+    color: #000; /* Black text color */
+}
